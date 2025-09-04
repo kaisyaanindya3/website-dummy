@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - TK Tadika Mesra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://cdn.idntimes.com/content-images/post/20241209/1-f3efa67c81325e5c229967464dc04f3c_600x400.jpg" alt="Logo Tadika Mesra">
+                <span>TK Tadika Mesra</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html#home">Beranda</a></li>
+                <li><a href="index.html#about">Tentang Kami</a></li>
+                <li><a href="index.html#program">Program</a></li>
+                <li><a href="index.html#mengapa-kami">Mengapa Kami</a></li>
+                <li><a href="index.html#news">Berita & Edukasi</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+                <li><a href="register.html" class="btn-register">Daftar Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Register Section -->
+    <section class="register" id="register">
+        <div class="container">
+            <h2 class="section-title">Pendaftaran TK Tadika Mesra</h2>
+            <p class="section-subtitle">Isi formulir berikut untuk mendaftarkan anak Anda di TK Tadika Mesra.</p>
+            <div class="register-form">
+                <form id="register-form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="parent-name">Nama Orang Tua</label>
+                        <input type="text" id="parent-name" name="parent-name" placeholder="Nama Lengkap Orang Tua" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="child-name">Nama Anak</label>
+                        <input type="text" id="child-name" name="child-name" placeholder="Nama Lengkap Anak" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="child-birthdate">Tanggal Lahir Anak</label>
+                        <input type="date" id="child-birthdate" name="child-birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="child-photo">Foto Anak</label>
+                        <input type="file" id="child-photo" name="child-photo" accept="image/jpeg,image/png" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Pilih Program</label>
+                        <select id="program" name="program" required>
+                            <option value="" disabled selected>Pilih Program</option>
+                            <option value="playgroup">Kelompok Bermain</option>
+                            <option value="tka">TK A</option>
+                            <option value="tkb">TK B</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Alamat Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Alamat</label>
+                        <textarea id="address" name="address" placeholder="Alamat Lengkap" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <img src="https://cdn.idntimes.com/content-images/post/20241209/1-f3efa67c81325e5c229967464dc04f3c_600x400.jpg" alt="Logo Tadika Mesra">
+                        <span>TK Tadika Mesra</span>
+                    </a>
+                    <p>Membentuk generasi cerdas, kreatif, dan berakhlak mulia melalui pendidikan usia dini yang menyenangkan.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html#home">Beranda</a></li>
+                        <li><a href="index.html#about">Tentang Kami</a></li>
+                        <li><a href="index.html#program">Program</a></li>
+                        <li><a href="index.html#mengapa-kami">Mengapa Kami</a></li>
+                        <li><a href="index.html#news">Berita & Edukasi</a></li>
+                        <li><a href="index.html#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-programs">
+                    <h3>Program Kami</h3>
+                    <ul>
+                        <li><a href="#">Kelompok Bermain</a></li>
+                        <li><a href="#">TK A</a></li>
+                        <li><a href="#">TK B</a></li>
+                        <li><a href="#">Ekstrakurikuler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Durian Runtuh No. 123</li>
+                        <li><i class="fas fa-phone-alt"></i> (0123) 456789</li>
+                        <li><i class="fas fa-envelope"></i> info@tadikamesra.edu</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Update Tadika Mesra</h3>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Anda" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2023 TK Tadika Mesra. Semua Hak Dilindungi.</p>
+                <div class="footer-social">
+                    <span>Ikuti Kami:</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
